@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaJs, FaReact, FaNodeJs, FaPython, FaDocker, FaGit, FaAws } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiPostgresql, SiTypescript, SiExpress } from 'react-icons/si';
+import './index.css'
+import BackgroundEffect from './BackgroundEffect';
 
 const skillData = [
   { name: 'JavaScript', icon: <FaJs /> },
@@ -19,29 +21,19 @@ const skillData = [
 
 const Skills = () => {
   return (
-    <div className="relative min-h-screen w-full bg-black overflow-hidden">
-      {/* Gradient blobs */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full opacity-40 blur-3xl bg-gradient-radial from-indigo-500 via-blue-600 to-transparent"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full opacity-30 blur-3xl bg-gradient-radial from-cyan-500 via-blue-400 to-transparent"></div>
+    <div className="block relative min-h-screen w-full bg-black overflow-hidden">
+      {/* Central Radiating Blob */}
+      <div className="absolute inset-0 flex items-center justify-center z-[-10]">
+        <div className="w-[600px] h-[600px] bg-blue-500 rounded-full blur-[200px] opacity-10 animate-spin"></div>
       </div>
 
-      {/* Glowing Grid */}
-      <div className="absolute inset-0 z-10 opacity-5">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px',
-          }}
-        ></div>
+      {/* Background Effects */}
+      <div className="absolute inset-0 z-0">
+        <BackgroundEffect />
       </div>
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-6 py-20">
+      <div className=" relative z-20 flex flex-col items-center justify-center min-h-screen px-6 py-20">
         <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 tracking-tight">
           <span className="bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent">
             My Skills
@@ -63,36 +55,6 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* Custom Animation Styles */}
-      <style jsx>{`
-        @keyframes fadeInUp {
-          0% {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fadeInUp 0.6s ease-out forwards;
-        }
-        .bg-gradient-radial {
-          background: radial-gradient(circle, var(--tw-gradient-stops));
-        }
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-8px);
-          }
-        }
-        .float-icon {
-          animation: float 3s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 };

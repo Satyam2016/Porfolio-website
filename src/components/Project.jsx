@@ -1,4 +1,6 @@
 import React from 'react';
+import './index.css'
+import BackgroundEffect from './BackgroundEffect'
 
 const projects = [
   {
@@ -29,11 +31,15 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className="relative min-h-screen w-full bg-black text-white px-6 py-16 overflow-hidden">
-      {/* Background gradients */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-gradient-radial from-blue-500 via-indigo-500 to-transparent opacity-30 blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-gradient-radial from-cyan-500 via-blue-500 to-transparent opacity-20 blur-3xl"></div>
+    <div className="block relative min-h-screen w-full bg-black text-white px-6 py-16 overflow-hidden">
+       {/* Central Radiating Blob */}
+      <div className="absolute inset-0 flex items-center justify-center z-[-10]">
+        <div className="w-[600px] h-[600px] bg-blue-500 rounded-full blur-[200px] opacity-10 animate-spin"></div>
+      </div>
+
+      {/* Background Effects */}
+      <div className="absolute inset-0 z-0">
+        <BackgroundEffect />
       </div>
 
       <h2 className="text-5xl md:text-6xl font-bold text-center mb-12">
@@ -76,13 +82,6 @@ const Project = () => {
           </div>
         ))}
       </div>
-
-      {/* Custom gradient radial background utility */}
-      <style jsx>{`
-        .bg-gradient-radial {
-          background: radial-gradient(circle, var(--tw-gradient-stops));
-        }
-      `}</style>
     </div>
   );
 };

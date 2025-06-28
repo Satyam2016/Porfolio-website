@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const tabs = ["Profile", "Badges", "Stats", "Contests", "Projects"];
+import './index.css'
 
 const CodingProfile = () => {
   const [profileData, setProfileData] = useState(null);
