@@ -92,31 +92,31 @@ const HeroSection = () => {
               {
                 name: 'GitHub',
                 icon: <FaGithub />,
-                url: 'https://github.com/YOUR_GITHUB',
+                url: 'https://github.com/Satyam2016',
                 hover: 'group-hover:text-gray-300'
               },
               {
                 name: 'LinkedIn',
                 icon: <FaLinkedin />,
-                url: 'https://www.linkedin.com/in/YOUR_LINKEDIN',
+                url: 'https://www.linkedin.com/in/satyam-kumar-7361661b3/',
                 hover: 'group-hover:text-blue-400'
               },
               {
                 name: 'LeetCode',
                 icon: <SiLeetcode />,
-                url: 'https://leetcode.com/YOUR_LEETCODE',
+                url: 'https://leetcode.com/u/satyam_kumar_79/',
                 hover: 'group-hover:text-yellow-400'
               },
               {
                 name: 'CodeChef',
                 icon: <SiCodechef />,
-                url: 'https://www.codechef.com/users/YOUR_CODECHEF',
+                url: 'https://www.codechef.com/users/bask_violet_39',
                 hover: 'group-hover:text-orange-300'
               },
               {
                 name: 'Codeforces',
                 icon: <SiCodeforces />,
-                url: 'https://codeforces.com/profile/YOUR_CODEFORCES',
+                url: 'https://codeforces.com/profile/satyam_79',
                 hover: 'group-hover:text-purple-300'
               }
             ].map(({ name, icon, url, hover }, i) => (
