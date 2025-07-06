@@ -77,8 +77,8 @@ const SlideTabs = ({ vertical, onClick }) => {
   { name: "Hero", id: "hero" },
   { name: "About", id: "about" },
   { name: "Skills", id: "skills" },
-  { name: "Experience", id: "experience" },
   { name: "Education", id: "education" },
+  { name: "Experience", id: "experience" },
   { name: "Projects", id: "projects" },
   { name: "Contact", id: "contact" },
 ];
