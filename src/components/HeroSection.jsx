@@ -11,7 +11,7 @@ import './index.css'
 
 const HeroSection = () => {
   return (
-    <div className="block relative min-h-screen w-full overflow-hidden bg-black">
+    <div className=" relative min-h-screen w-full overflow-hidden bg-black">
 
       {/* Infinity Background */}
       <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">

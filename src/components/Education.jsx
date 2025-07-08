@@ -5,22 +5,23 @@ import Card from './Card';
 
 const education = [
   {
-    degree: 'B.Tech in Computer Science',
-    institution: 'SRM University',
-    duration: '2021 - 2025',
-    description: 'Focused on Software Development, Cybersecurity, and Full Stack Engineering.',
+    degree: 'B.Tech in Computer Science and Engineering',
+    institution: 'SRM University, Andhra Pradesh',
+    duration: 'Oct 2022 - May 2026',
+    description: 'Focused on Data Structures, System Design, Distributed Systems, and Full Stack Development. CGPA: 8.75/10',
   },
   {
-    degree: 'Intermediate',
-    institution: 'XYZ Junior College',
-    duration: '2019 - 2021',
-    description: 'Specialized in Math, Physics, and Computer Science.',
+    degree: 'Higher Secondary Education',
+    institution: 'VidyaGyan Leadership Academy, Sitapur, UP',
+    duration: 'Apr 2020 - May 2022',
+    description: 'Specialized in Mathematics, Physics, and Computer Science. Scored 94%.',
   },
 ];
 
+
 const Education = () => {
   return (
-    <section id="education" className="relative w-full bg-black py-20 overflow-hidden">
+    <section id="education" className=" block relative w-full bg-black py-20 overflow-hidden min-h-screen">
       {/* Background */}
       <div className="absolute inset-0 flex items-center justify-center z-[-10]">
         <div className="w-[600px] h-full bg-blue-500 rounded-full blur-[200px] opacity-10"></div>

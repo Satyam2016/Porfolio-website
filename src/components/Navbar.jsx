@@ -39,7 +39,7 @@ const Navbar = () => {
       </button>
 
       {/* Desktop Navbar */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-40 backdrop-blur-md border border-white/20 rounded-full shadow-lg bg-black/60 hidden md:flex px-8 py-1 w-full max-w-4xl justify-center text-white">
+      <nav className="fixed top-3 left-1/2 -translate-x-1/2 z-40 backdrop-blur-md border border-white/20 rounded-full shadow-lg bg-black/60 hidden md:flex px-8 py-1 w-full max-w-4xl justify-center text-white">
         <SlideTabs onClick={handleMenuClick} />
       </nav>
 
@@ -78,7 +78,7 @@ const SlideTabs = ({ vertical, onClick }) => {
   { name: "About", id: "about" },
   { name: "Skills", id: "skills" },
   { name: "Education", id: "education" },
-  { name: "Experience", id: "experience" },
+  // { name: "Experience", id: "experience" },
   { name: "Projects", id: "projects" },
   { name: "Contact", id: "contact" },
 ];

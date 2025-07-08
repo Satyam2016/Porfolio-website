@@ -1,31 +1,35 @@
 import React from 'react';
 import './index.css'
 import BackgroundEffect from './BackgroundEffect'
+import InsightTube from '../assets/InsightTube.png'
+import SMP from '../assets/SMP.png'
+import whiteboard from '../assets/whiteboard.png'
+
 
 const projects = [
   {
-    title: 'Lost and Found Management System',
+    title: 'InsightTube – YouTube Analytics Platform',
     description:
-      'A full-stack web app with real-time WebSocket chat, JWT auth, smart match algorithm, and admin approval panel.',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Socket.IO'],
-    link: 'https://yourprojectlink.com',
-    image: 'https://github.blog/wp-content/uploads/2023/01/1200x640.png?resize=1200%2C640',
+      'Distributed analytics platform using YouTube Data API v3 with NLP pipeline, JWT auth, rate limiting, and real-time React dashboard.',
+    stack: ['React', 'FastAPI', 'MongoDB', 'JWT', 'NLP'],
+    link: 'https://github.com/Satyam2016/InsightTube',
+    image: InsightTube,
   },
   {
-    title: 'Spotify Music Player Clone',
+    title: 'Student Mentorship Platform',
     description:
-      'A music player built with Spotify API allowing users to browse, search, and play tracks with beautiful UI.',
-    stack: ['React', 'Spotify API', 'TailwindCSS'],
-    link: 'https://yourspotifyclone.com',
-    image: 'https://github.blog/wp-content/uploads/2023/01/1200x640.png?resize=1200%2C640',
+      'Full-stack web app with real-time messaging using WebSocket (Socket.io), optimized MongoDB, and JWT authentication.',
+    stack: ['Node.js', 'Express.js', 'MongoDB', 'Socket.IO'],
+    link: 'https://github.com/Satyam2016/Student-Mentorship-Platform',
+    image:  SMP,
   },
   {
-    title: 'AI GitHub Analyzer',
+    title: 'Collaborative Whiteboard',
     description:
-      'Takes GitHub repo links and generates flow diagrams and explanations using LLMs like CodeLlama.',
-    stack: ['Python', 'FastAPI', 'LLM', 'Graphviz'],
-    link: 'https://githubanalyzer.com',
-    image: 'https://github.blog/wp-content/uploads/2023/01/1200x640.png?resize=1200%2C640',
+      'Real-time collaborative drawing app with conflict resolution, Firebase persistence, and optimized canvas rendering.',
+    stack: ['React', 'Firebase', 'Canvas API'],
+    link: 'https://github.com/Satyam2016/Whiteboard-Canvas-Application',
+    image: whiteboard,
   },
 ];
 

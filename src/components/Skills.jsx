@@ -1,22 +1,54 @@
 import React from 'react';
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDocker, FaGit, FaAws } from 'react-icons/fa';
-import { SiTailwindcss, SiMongodb, SiPostgresql, SiTypescript, SiExpress } from 'react-icons/si';
+import {
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaDocker,
+  FaGit,
+  FaAws,
+  FaHtml5,
+  FaCss3Alt,
+  FaLinux
+} from 'react-icons/fa';
+
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiTypescript,
+  SiMysql,
+  SiRedis,
+  SiFastapi,
+  SiFlask,
+  SiFirebase,
+  SiPostman,
+  SiSocketdotio,
+ 
+  SiCplusplus
+} from 'react-icons/si';
+
 import './index.css'
 import BackgroundEffect from './BackgroundEffect';
 
 const skillData = [
-  { name: 'JavaScript', icon: <FaJs /> },
-  { name: 'React', icon: <FaReact /> },
-  { name: 'Node.js', icon: <FaNodeJs /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+  { name: 'C/C++', icon: <SiCplusplus /> },
   { name: 'Python', icon: <FaPython /> },
-  { name: 'Express', icon: <SiExpress /> },
+  { name: 'JavaScript', icon: <FaJs /> },
+  { name: 'React.js', icon: <FaReact /> },
+  { name: 'HTML5', icon: <FaHtml5 /> },
+  { name: 'CSS3', icon: <FaCss3Alt /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+  { name: 'Node.js', icon: <FaNodeJs /> },
+  { name: 'Express.js', icon: <SiExpress /> },
+  { name: 'FastAPI', icon: <SiFastapi /> },
   { name: 'MongoDB', icon: <SiMongodb /> },
-  { name: 'PostgreSQL', icon: <SiPostgresql /> },
+  { name: 'MySQL', icon: <SiMysql /> },
+  { name: 'Redis', icon: <SiRedis /> },
   { name: 'Docker', icon: <FaDocker /> },
   { name: 'Git', icon: <FaGit /> },
-  { name: 'AWS', icon: <FaAws /> },
-  { name: 'TypeScript', icon: <SiTypescript /> },
+  { name: 'WebSocket (Socket.io)', icon: <SiSocketdotio /> },
 ];
 
 const Skills = () => {
