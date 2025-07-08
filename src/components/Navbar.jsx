@@ -74,7 +74,7 @@ const SlideTabs = ({ vertical, onClick }) => {
 
   // Updated tab names and section IDs
   const tabs = [
-  { name: "Hero", id: "hero" },
+  { name: "Home", id: "hero" },
   { name: "About", id: "about" },
   { name: "Skills", id: "skills" },
   { name: "Education", id: "education" },
