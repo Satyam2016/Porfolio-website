@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Satyam2016/Porfolio-website",
+  "homepage": "https://Satyam2016.github.io/Porfolio-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-three/drei": "^10.2.0",
