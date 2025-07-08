@@ -22,6 +22,7 @@ const education = [
 const Education = () => {
   return (
     <section id="education" className=" block relative w-full bg-black py-20 overflow-hidden min-h-screen">
+
       {/* Background */}
       <div className="absolute inset-0 flex items-center justify-center z-[-10]">
         <div className="w-[600px] h-full bg-blue-500 rounded-full blur-[200px] opacity-10"></div>
